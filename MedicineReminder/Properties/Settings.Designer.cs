@@ -118,5 +118,17 @@ namespace MedicineReminder.Properties {
                 this["isCheckedYoru"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int dateNumber {
+            get {
+                return ((int)(this["dateNumber"]));
+            }
+            set {
+                this["dateNumber"] = value;
+            }
+        }
     }
 }
