@@ -10,7 +10,8 @@ MedicineReminderは薬を飲んだかどうかを記録するソフトウェア�
 Windows OS
 
 # Download
-まだ．
+https://github.com/Tsuyopon-1067/MedicineReminder/releases/tag/v1.0
+を開いたら，下部の **MedicineReminder.v1.0.zip**  をダウンロード.
 
 # How to use
 起動後，画面の○×ボタンを押して薬を飲んだかどうかを記録するだけです．記録は毎日午前0時になるときにリセットされ，全て×印になるので，永久的な記録には使えません．
