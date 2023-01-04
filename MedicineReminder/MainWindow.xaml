@@ -14,9 +14,9 @@
             <RowDefinition Height="24" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Vertical" Background="White" Margin="12">
-            <local:MedicineToggle Margin="10 10" Height="40" Text="朝" IsChecked="False" />
-            <local:MedicineToggle Margin="10 10" Height="40" Text="昼" IsChecked="False" />
-            <local:MedicineToggle Margin="10 10" Height="40" Text="夜" IsChecked="False" />
+            <local:MedicineToggle x:Name="medicineToggleAsa" Text="朝" IsChecked="False" />
+            <local:MedicineToggle x:Name="medicineToggleHiru" Text="昼" IsChecked="False" />
+            <local:MedicineToggle x:Name="medicineToggleYoru" Text="夜" IsChecked="False" />
         </StackPanel>
         <Grid  Grid.Row="1" Margin="0" Background="Gray">
             <StackPanel Margin="0" Orientation="Horizontal" HorizontalAlignment="Right">

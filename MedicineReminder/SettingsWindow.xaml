@@ -1,0 +1,24 @@
+﻿<Window x:Class="MedicineReminder.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedicineReminder"
+        mc:Ignorable="d"
+        Title="Settings" Height="auto" Width="100">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Vertical">
+            <local:CheckBoxText x:Name="asaCheck" Text="朝" />
+            <local:CheckBoxText x:Name="hiruCheck" Text="昼" />
+            <local:CheckBoxText x:Name="yoruCheck" Text="夜" />
+        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="キャンセル" Margin="5 5 2.5 5" FontSize="12" Click="QuitButton_Click" />
+            <Button Grid.Column="1" Content="適用" Margin="2.5 5 5 5" FontSize="12" Click="ApplyButton_Click" />
+        </Grid>
+    </StackPanel>
+</Window>
