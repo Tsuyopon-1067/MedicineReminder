@@ -9,15 +9,10 @@
     <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
     <DebugType>none</DebugType>
     <UseWindowsForms>True</UseWindowsForms>
-    <ApplicationIcon>icon\icon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <Page Remove="icon\maru.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="icon\icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
