@@ -5,8 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MedicineReminder"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        WindowStyle="None" 
+        Height="auto" Width="150" 
+        AllowsTransparency="True" Background="Black">
+    <Grid Background="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="24" />
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical" Background="White" Margin="12">
+            <local:MedicineToggle Margin="10 10" Height="40" Text="朝" IsChecked="False" />
+            <local:MedicineToggle Margin="10 10" Height="40" Text="昼" IsChecked="False" />
+            <local:MedicineToggle Margin="10 10" Height="40" Text="夜" IsChecked="False" />
+        </StackPanel>
+        <Grid  Grid.Row="1" Margin="0" Background="Gray">
+            <StackPanel Margin="0" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Click="SettingsButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <TextBlock Text="設定" Padding="4" Background="Transparent"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                       MouseLeave="ButtomButton_MouseLeave" MouseEnter="ButtomButton_MouseEnter" />
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button Click="QuitButton_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <TextBlock Text="終了" Padding="4" Background="Transparent"
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" 
+                                       MouseLeave="ButtomButton_MouseLeave" MouseEnter="ButtomButton_MouseEnter" />
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
 
     </Grid>
 </Window>

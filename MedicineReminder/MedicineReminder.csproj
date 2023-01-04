@@ -7,4 +7,12 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Page Remove="icon\maru.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon\maru.xaml" />
+  </ItemGroup>
+
 </Project>
