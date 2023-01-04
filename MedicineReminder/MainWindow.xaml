@@ -25,6 +25,7 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <TextBlock Text="設定" Padding="4" Background="Transparent"
+                                       Foreground="White"
                                        VerticalAlignment="Center" HorizontalAlignment="Center" 
                                        MouseLeave="ButtomButton_MouseLeave" MouseEnter="ButtomButton_MouseEnter" />
                         </ControlTemplate>
@@ -34,6 +35,7 @@
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
                             <TextBlock Text="終了" Padding="4" Background="Transparent"
+                                       Foreground="White"
                                        VerticalAlignment="Center" HorizontalAlignment="Center" 
                                        MouseLeave="ButtomButton_MouseLeave" MouseEnter="ButtomButton_MouseEnter" />
                         </ControlTemplate>
