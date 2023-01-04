@@ -57,7 +57,7 @@ namespace MedicineReminder
             mw.isAvailableHiru = hiruCheck.IsChecked;
             mw.isAvailableYoru = yoruCheck.IsChecked;
             // 設定の変更を保存
-            Properties.Settings.Default.isAvailableYoru = asaCheck.IsChecked;
+            Properties.Settings.Default.isAvailableAsa = asaCheck.IsChecked;
             Properties.Settings.Default.isAvailableHiru = hiruCheck.IsChecked;
             Properties.Settings.Default.isAvailableYoru = yoruCheck.IsChecked;
             // トグルボタンの表示状態を適用
