@@ -58,5 +58,29 @@ namespace MedicineReminder.Properties {
                 this["isAvailableYoru"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public double windowLeft {
+            get {
+                return ((double)(this["windowLeft"]));
+            }
+            set {
+                this["windowLeft"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("300")]
+        public double windowTop {
+            get {
+                return ((double)(this["windowTop"]));
+            }
+            set {
+                this["windowTop"] = value;
+            }
+        }
     }
 }

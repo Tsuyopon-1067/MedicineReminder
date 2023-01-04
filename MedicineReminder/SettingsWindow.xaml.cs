@@ -60,6 +60,7 @@ namespace MedicineReminder
             Properties.Settings.Default.isAvailableAsa = asaCheck.IsChecked;
             Properties.Settings.Default.isAvailableHiru = hiruCheck.IsChecked;
             Properties.Settings.Default.isAvailableYoru = yoruCheck.IsChecked;
+            Properties.Settings.Default.Save();
             // トグルボタンの表示状態を適用
             mw.SetMedicineToggleVisiblity();
             QuitButton_Click(sender, e);

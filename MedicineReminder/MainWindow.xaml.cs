@@ -10,6 +10,9 @@ namespace MedicineReminder
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public MainWindow()
         {
             InitializeComponent();
@@ -18,6 +21,11 @@ namespace MedicineReminder
             moveHandle.MouseLeftButtonDown += (o, e) => DragMove();
             toggleButtonStackPanel.MouseLeftButtonDown += (o, e) => DragMove();
             bottomBar.MouseLeftButtonDown += (o, e) => DragMove();
+            // ウィンドウ位置の読み込み
+            this.Left = Properties.Settings.Default.windowLeft;
+            this.Top = Properties.Settings.Default.windowTop;
+            // トグルボタンの表示状態の読み込み
+            SetMedicineToggleVisiblity();
         }
 
         public bool isAvailableAsa = Properties.Settings.Default.isAvailableAsa;
@@ -64,6 +72,10 @@ namespace MedicineReminder
         /// <param name="e">おまじない イベントハンドラとして必要</param>
         private void QuitButton_Click(object sender, RoutedEventArgs e)
         {
+            // ウィンドウ座標を保存
+            Properties.Settings.Default.windowLeft = this.Left;
+            Properties.Settings.Default.windowTop = this.Top; 
+            Properties.Settings.Default.Save();
             this.Close();
         }
         /// <summary>
