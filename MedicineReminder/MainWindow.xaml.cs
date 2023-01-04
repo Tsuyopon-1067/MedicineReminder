@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MedicineReminder
 {
@@ -24,6 +14,10 @@ namespace MedicineReminder
         {
             InitializeComponent();
             this.SizeToContent = SizeToContent.Height;
+            // ウィンドウ移動ハンドルの追加
+            moveHandle.MouseLeftButtonDown += (o, e) => DragMove();
+            toggleButtonStackPanel.MouseLeftButtonDown += (o, e) => DragMove();
+            bottomBar.MouseLeftButtonDown += (o, e) => DragMove();
         }
 
         public bool isAvailableAsa = Properties.Settings.Default.isAvailableAsa;
