@@ -1,16 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using System.Windows.Forms;
+
 
 namespace MedicineReminder
 {
@@ -33,7 +23,12 @@ namespace MedicineReminder
             asaCheck.IsChecked = Properties.Settings.Default.isAvailableAsa;
             hiruCheck.IsChecked = Properties.Settings.Default.isAvailableHiru;
             yoruCheck.IsChecked = Properties.Settings.Default.isAvailableYoru;
-    }
+            // マウスカーソル位置にウィンドウを移動
+            this.Left = System.Windows.Forms.Cursor.Position.X;
+            this.Top = System.Windows.Forms.Cursor.Position.Y;
+            if (this.Left > 100) this.Left -= 100;
+            if (this.Top > 100) this.Top -= 100;
+        }
 
         /// <summary>
         /// アプリケーションを終了するメソッド

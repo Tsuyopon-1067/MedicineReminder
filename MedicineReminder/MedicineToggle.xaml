@@ -12,7 +12,7 @@
             <ColumnDefinition Width="1.5*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Column="0" x:Name="tb" Text="{Binding Text, ElementName=root}" FontSize="24" VerticalAlignment="Center" />
+        <TextBlock Grid.Column="0" x:Name="tb" Text="{Binding Text, ElementName=root}" FontSize="24" VerticalAlignment="Center" FontWeight="Bold" />
         <Viewbox Grid.Column="1" Cursor="Hand">
             <Viewbox.Resources>
                 <Style TargetType="{x:Type Button}" x:Key="ImageButtonStyle">
@@ -32,8 +32,8 @@
                             <TranslateTransform X="0" Y="0"/>
                         </Canvas.RenderTransform>
                         <Canvas>
-                            <Path StrokeThickness="3" Stroke="#FFFF0000" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Data="M 10 10 40 40"/>
-                            <Path StrokeThickness="3" Stroke="#FFFF0000" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Data="M 10 40 40 10"/>
+                            <Path StrokeThickness="5" Stroke="#FFFF0000" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Data="M 10 10 40 40"/>
+                            <Path StrokeThickness="5" Stroke="#FFFF0000" StrokeMiterLimit="4" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat" Data="M 10 40 40 10"/>
                         </Canvas>
                     </Canvas>
                     <Canvas x:Name="maru" Width="50" Height="50" Background="Transparent">
@@ -41,7 +41,7 @@
                             <TranslateTransform X="0" Y="0"/>
                         </Canvas.RenderTransform>
                         <Canvas>
-                            <Ellipse Canvas.Left="5" Canvas.Top="5" Width="40" Height="40" StrokeThickness="3" Stroke="#FF00FF00" StrokeMiterLimit="4"/>
+                            <Ellipse Canvas.Left="5" Canvas.Top="5" Width="40" Height="40" StrokeThickness="5" Stroke="#FF00DD00" StrokeMiterLimit="4"/>
                         </Canvas>
                     </Canvas>
                 </Grid>
