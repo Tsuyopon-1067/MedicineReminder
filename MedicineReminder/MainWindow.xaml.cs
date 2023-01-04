@@ -23,6 +23,7 @@ namespace MedicineReminder
         public MainWindow()
         {
             InitializeComponent();
+            this.SizeToContent = SizeToContent.Height;
         }
 
         public bool isAvailableAsa = Properties.Settings.Default.isAvailableAsa;
