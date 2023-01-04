@@ -20,11 +20,16 @@ namespace MedicineReminder
     public partial class SettingsWindow : Window
     {
         private MainWindow mw;
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="mw">MainWindowのインスタンス</param>
         public SettingsWindow(MainWindow mw)
         {
             InitializeComponent();
             this.SizeToContent = SizeToContent.Height;
             this.mw = mw;
+            // トグルボタンの表示状態の読み込み
             asaCheck.IsChecked = Properties.Settings.Default.isAvailableAsa;
             hiruCheck.IsChecked = Properties.Settings.Default.isAvailableHiru;
             yoruCheck.IsChecked = Properties.Settings.Default.isAvailableYoru;
