@@ -26,6 +26,10 @@ namespace MedicineReminder
             this.Top = Properties.Settings.Default.windowTop;
             // トグルボタンの表示状態の読み込み
             SetMedicineToggleVisiblity();
+            // トグルボタンのチェック状態の読み込み
+            medicineToggleAsa.IsChecked = Properties.Settings.Default.isCheckedAsa;
+            medicineToggleHiru.IsChecked = Properties.Settings.Default.isCheckedHiru;
+            medicineToggleYoru.IsChecked = Properties.Settings.Default.isCheckedYoru;
         }
 
         public bool isAvailableAsa = Properties.Settings.Default.isAvailableAsa;
@@ -74,7 +78,9 @@ namespace MedicineReminder
         {
             // ウィンドウ座標を保存
             Properties.Settings.Default.windowLeft = this.Left;
-            Properties.Settings.Default.windowTop = this.Top; 
+            Properties.Settings.Default.windowTop = this.Top;
+            // トグルボタンのチェック状態を保存
+            SaveToggleState();
             Properties.Settings.Default.Save();
             this.Close();
         }
@@ -87,6 +93,26 @@ namespace MedicineReminder
             medicineToggleAsa.Visibility = getVisiblity(isAvailableAsa);
             medicineToggleHiru.Visibility = getVisiblity(isAvailableHiru);
             medicineToggleYoru.Visibility = getVisiblity(isAvailableYoru);
+        }
+
+        /// <summary>
+        /// マウスがトグルボタンコントロールから外れたらトグルボタンのチェック状態を保存するメソッド
+        /// </summary>
+        /// <param name="sender">おまじない イベントハンドラとして必要</param>
+        /// <param name="e">おまじない イベントハンドラとして必要</param>
+
+        private void MedicineToggle_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SaveToggleState();
+        }
+        /// <summary>
+        /// トグルボタンのチェック状態を保存するメソッド
+        /// </summary>
+        private void SaveToggleState()
+        {
+            Properties.Settings.Default.isCheckedAsa = medicineToggleAsa.IsChecked;
+            Properties.Settings.Default.isCheckedHiru = medicineToggleHiru.IsChecked;
+            Properties.Settings.Default.isCheckedYoru = medicineToggleYoru.IsChecked;
         }
     }
 }

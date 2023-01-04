@@ -82,5 +82,41 @@ namespace MedicineReminder.Properties {
                 this["windowTop"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isCheckedAsa {
+            get {
+                return ((bool)(this["isCheckedAsa"]));
+            }
+            set {
+                this["isCheckedAsa"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isCheckedHiru {
+            get {
+                return ((bool)(this["isCheckedHiru"]));
+            }
+            set {
+                this["isCheckedHiru"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool isCheckedYoru {
+            get {
+                return ((bool)(this["isCheckedYoru"]));
+            }
+            set {
+                this["isCheckedYoru"] = value;
+            }
+        }
     }
 }
