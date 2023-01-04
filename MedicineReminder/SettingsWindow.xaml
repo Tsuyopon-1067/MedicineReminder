@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MedicineReminder"
         mc:Ignorable="d"
-        Title="設定" Height="auto" Width="100">
+        Title="設定" Height="auto" Width="210">
     <StackPanel Orientation="Vertical">
         <StackPanel Orientation="Vertical">
             <local:CheckBoxText x:Name="asaCheck" Text="朝" />

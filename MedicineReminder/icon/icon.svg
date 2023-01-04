@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   sodipodi:docname="icon.svg"
+   inkscape:export-filename="D:\Users\Tsuyoshi\Documents\C#\MedicineReminder\MedicineReminder\icon\icon.png"
+   inkscape:export-xdpi="491.51999"
+   inkscape:export-ydpi="491.51999"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="8"
+     inkscape:cx="7.0625"
+     inkscape:cy="25.125"
+     inkscape:window-width="1855"
+     inkscape:window-height="1057"
+     inkscape:window-x="57"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px"
+     inkscape:lockguides="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="maru"
+     style="display:inline">
+    <path
+       style="fill:#29afaf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.81064;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path6412"
+       sodipodi:type="arc"
+       sodipodi:cx="6.6145"
+       sodipodi:cy="6.6145"
+       sodipodi:rx="6.6145"
+       sodipodi:ry="6.6145"
+       sodipodi:start="1.5766318"
+       sodipodi:end="1.5766038"
+       sodipodi:arc-type="arc"
+       d="M 6.5759015,13.228887 A 6.6145,6.6145 0 0 1 1.123506e-4,6.5759478 6.6145,6.6145 0 0 1 6.653006,1.120809e-4 6.6145,6.6145 0 0 1 13.228888,6.6529597 6.6145,6.6145 0 0 1 6.5760867,13.228889"
+       sodipodi:open="true" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="kage"
+     style="display:inline">
+    <path
+       id="path6412-2"
+       style="display:inline;fill:#259e9e;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:6.84336;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 49.935547 23.207031 L 38.25 11.521484 L 11.523438 38.246094 L 23.205078 49.927734 A 24.999685 24.999685 0 0 0 24.853516 49.998047 A 24.999685 24.999685 0 0 0 49.998047 25.144531 A 24.999685 24.999685 0 0 0 49.935547 23.207031 z "
+       transform="scale(0.26458333)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="iro1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="iro2"
+     style="display:inline" />
+  <g
+     inkscape:label="rinkaku"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect926-3"
+       width="3.4999981"
+       height="9.499999"
+       x="-11.104433"
+       y="-4.749999"
+       ry="1.749999"
+       transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,0,0)" />
+    <path
+       style="fill:#262626;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 7.3956707,7.9972432 C 8.0887866,7.3041273 6.0291367,5.0795646 5.2474886,5.8446762 l 2.3344872,-2.4178 C 9.1774424,1.8314096 11.374718,4.0181956 9.7740067,5.6189071 Z"
+       id="path1639"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect926"
+       width="3.4999981"
+       height="9.499999"
+       x="-11.104433"
+       y="-4.7499995"
+       ry="1.749999"
+       transform="matrix(-0.70710678,-0.70710678,-0.70710678,0.70710678,0,0)" />
+  </g>
+</svg>
